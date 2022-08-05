@@ -1,0 +1,33 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sample-py-cli"
+version = "0.0.1"
+
+authors = [
+  { name="Simone Aiello", email="saiello103@gmail.com" },
+]
+
+description = "A small python cli package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "click==8.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/saiello/sample-py-cli"
+"Bug Tracker" = "https://github.com/saiello/sample-py-cli/issues"
+
+[project.scripts]
+sample-py-cli = "sample_py_cli.cli:hello"
